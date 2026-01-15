@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "name": "pytest user",
+      "email": "test+1768468254@example.com",
+      "password": "pw12345"
+    },
+    {
+      "name": "dupe",
+      "email": "dupe@example.com",
+      "password": "aaa"
+    },
+    {
+      "name": "login user",
+      "email": "loginuser@example.com",
+      "password": "s3cret"
+    },
+    {
+      "name": "E2E Tester",
+      "email": "e2e+1768488480@example.com",
+      "password": "pw12345"
+    },
+    {
+      "name": "prafull",
+      "email": "prafullk@cybage.com",
+      "password": "Test@123123!"
+    }
+  ]
+}

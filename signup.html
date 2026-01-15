@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sign up — Welcome Holidays</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Create account</h1>
+
+    <div class="auth-container">
+      <form id="signupForm">
+        <label>Full name
+          <input id="signupName" type="text" required />
+        </label>
+
+        <label>Email
+          <input id="signupEmail" type="email" required />
+        </label>
+
+        <label>Password
+          <input id="signupPassword" type="password" required minlength="6" />
+        </label>
+
+        <label>Confirm password
+          <input id="signupPassword2" type="password" required minlength="6" />
+        </label>
+
+        <div class="actions">
+          <button type="submit" class="submit-btn">Sign up</button>
+          <a class="link" href="login.html">Sign in</a>
+        </div>
+
+        <div id="signupMsg" class="form-msg"></div>
+      </form>
+    </div>
+  </main>
+
+  <script src="auth.js"></script>
+</body>
+</html>

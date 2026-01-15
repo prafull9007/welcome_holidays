@@ -1,0 +1,39 @@
+:root{
+  --accent: #2b7cff;
+  --bg: #f7f9fc;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --font: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+body{font-family:var(--font); margin:0; padding:28px; background:var(--bg); color:var(--text);}
+.container{max-width:980px;margin:0 auto;}
+.controls{display:flex;align-items:center;gap:12px;margin-bottom:14px;}
+.month-title{font-weight:600;color:var(--muted);margin-left:8px;}
+.content{display:flex;gap:20px;flex-wrap:wrap;}
+.holidays{flex:1 1 320px;background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.06);}
+.chart{flex:2 1 520px;background:var(--card);padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.06);min-height:320px;position:relative;}
+#holidayList{list-style:none;padding:0;margin:0;}
+#holidayList li{display:flex;gap:12px;align-items:flex-start;padding:10px;border-radius:8px;margin-bottom:8px;border-left:6px solid var(--accent);background:linear-gradient(180deg, rgba(255,255,255,0.0), rgba(0,0,0,0.0));}
+#holidayList li .meta{color:var(--muted);font-size:13px;}
+#holidayList li .icon{font-size:22px;line-height:1;margin-right:6px; width:36px; text-align:center;}
+#holidayList li .content{flex:1;}
+.count{color:var(--muted);font-weight:600;margin-left:8px;}
+h1{margin:0 0 12px 0;font-weight:700;}
+h2{margin:0 0 12px 0;font-size:1.05rem;}
+select{padding:6px 8px;border-radius:6px;border:1px solid #e6e9ee;background:#fff;}
+small{color:var(--muted);}
+
+/* Auth form styles */
+.auth-container{max-width:420px;background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.06);}
+.auth-container form{display:flex;flex-direction:column;gap:10px}
+.auth-container label{display:flex;flex-direction:column;font-size:14px;color:var(--muted)}
+.auth-container input[type="text"], .auth-container input[type="email"], .auth-container input[type="password"]{padding:8px;border-radius:6px;border:1px solid #e6e9ee;background:#fff}
+.actions{display:flex;gap:12px;align-items:center;margin-top:6px}
+.link{color:var(--accent);text-decoration:none;font-weight:600}
+
+/* Submit buttons must be pink per project convention */
+.submit-btn{background:#ff66b3;color:#fff;border:none;padding:8px 12px;border-radius:8px;cursor:pointer}
+.submit-btn:hover{opacity:0.95}
+.form-msg{margin-top:8px;font-size:14px}
+
